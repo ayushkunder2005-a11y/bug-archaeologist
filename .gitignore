@@ -1,0 +1,62 @@
+# ── Environments & Dependencies ───────────────────────────────
+venv/
+.venv/
+backend/venv/
+backend/.venv/
+env/
+node_modules/
+frontend/node_modules/
+
+# ── Cloned Repositories (Critical: Dynamic downloads) ──────────
+backend/repos/*
+!backend/repos/.gitkeep
+repos/*
+!repos/.gitkeep
+
+# ── Build & Distribution ──────────────────────────────────────
+dist/
+dist-ssr/
+frontend/dist/
+build/
+*.egg-info/
+
+# ── Python Caches & Testing ───────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+backend/.pytest_cache/
+.coverage
+htmlcov/
+
+# ── Environment & Secrets ─────────────────────────────────────
+.env
+*.env
+backend/.env
+frontend/.env
+!.env.example
+
+# ── IDEs & Editors ───────────────────────────────────────────
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ── OS Generated Files ────────────────────────────────────────
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ── Logs ──────────────────────────────────────────────────────
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*

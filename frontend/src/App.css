@@ -1,0 +1,43 @@
+/* App-specific styles — layout, transitions, typography overrides */
+
+/* ── Sidebar transition ──────────────────────────────────────────── */
+aside {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ── Table striping ──────────────────────────────────────────────── */
+tbody tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.01);
+}
+
+/* ── Custom scrollbar for sidebar ────────────────────────────────── */
+aside nav::-webkit-scrollbar {
+  width: 3px;
+}
+aside nav::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* ── Recharts dark theme overrides ───────────────────────────────── */
+.recharts-default-tooltip {
+  border-radius: 12px !important;
+}
+.recharts-legend-item-text {
+  color: #9ca3af !important;
+  font-size: 11px !important;
+}
+
+/* ── Button press effect ─────────────────────────────────────────── */
+button:active:not(:disabled) {
+  transform: scale(0.97);
+}
+
+/* ── Line clamp ──────────────────────────────────────────────────── */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
